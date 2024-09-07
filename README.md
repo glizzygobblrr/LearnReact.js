@@ -2,9 +2,9 @@
 This repo tracks my learning for React.js.
 
 1.React Tutorial 
-1.1. React Home 
-1.2. React Intro 
-1.3. React Get Started 
+1.1. React Home ✅
+1.2. React Intro ✅
+1.3. React Get Started ✅
 1.4. React Upgrade 
 1.5. React ES6 
 1.6. React Render HTML 
