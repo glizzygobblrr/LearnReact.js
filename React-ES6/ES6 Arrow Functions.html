@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h1>Learning Arrow Functions</h1>
+
+<p id="demo"></p>
+  
+<script>
+hello = function() { //Default version
+    return "Hello World!";
+}
+
+hello = () =>{ //Implementing arrow function shortens the process
+    return "Hello World!";
+}
+
+hello = (val) => "Hello " + val; //Implementing arrow function already includes the return function; add params if necessary inside the parentheses
+
+hello = val => "Hello" + val;//If only 1 param, can skip the parentheses 
+
+document.getElementById("demo").innerHTML = hello("World");
+</script>
+
+</body>
+</html>

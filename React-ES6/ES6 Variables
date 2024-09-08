@@ -1,0 +1,30 @@
+Variables:
+
+Function scope: Variables that are scoped to the entire function in which they are declared. 
+                In JavaScript, this is typically associated with 'var' declarations.
+
+Block scope: Variables  that are scoped to the block (e.g., within {}) in which they are declared. 
+                This is a concept introduced with let and const in ES6 (ECMAScript 2015).
+
+1. var: function scope
+- If you use var outside of a function, it belongs to the global scope.
+- If you use var inside of a function, it belongs to that function.
+- If you use var inside of a block, i.e. a for loop, the variable is still available outside of that block.
+
+2. let: block scope
+- let is the block scoped version of var, and is limited to the block (or expression) where it is defined.
+- If you use let inside of a block, i.e. a for loop, the variable is only available inside of that loop.
+
+3. const: block scope
+- const is a variable that once it has been created, its value can never change.
+
+Because of this you can NOT:
+
+- Reassign a constant value
+- Reassign a constant array
+- Reassign a constant object
+
+But you CAN:
+
+- Change the elements of constant array
+- Change the properties of constant object

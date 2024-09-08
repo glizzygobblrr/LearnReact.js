@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  
+<script>
+class Guitar {
+    constructor(name){
+        this.brand = name;
+    }
+
+    present(){
+        return 'I have a ' + this.brand;
+    }
+}
+
+class Model extends Guitar{ //'extends' keyword used to inherit superclass methods
+    constructor(name,mod){
+        super(name) //'super' keyword calls the parent's constructor method
+        this.model = mod; 
+    }
+    show(){
+        return this.present() + ', it is a ' + this.model;
+    }
+}
+const myGuitar = new Model('Fender', 'Telecaster');
+document.write(myGuitar.show());
+</script>
+
+</body>
+</html>
