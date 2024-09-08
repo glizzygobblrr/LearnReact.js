@@ -2,24 +2,35 @@
 <html>
 
 <body>
-  
-<script>
-function calculate(a, b) {
-  const add = a + b;
-  const subtract = a - b;
-  const multiply = a * b;
-  const divide = a / b;
 
-  return [add, subtract, multiply, divide];
+  <p id="demo"></p>
+
+<script>
+const vehicleOne = {
+  brand: 'Ford',
+  model: 'Mustang',
+  type: 'car',
+  year: 2021, 
+  color: 'red'
 }
 
-const [add, subtract, multiply, divide] = calculate(4, 7);
+//before destructuring
+/*myVehicle(vehicleOne);
 
-document.write("<p>Sum: " + add + "</p>");
-document.write("<p>Difference " + subtract + "</p>");
-document.write("<p>Product: " + multiply + "</p>");
-document.write("<p>Quotient " + divide + "</p>");
+function myVehicle(vehicle) {
+  const message = 'My ' + vehicle.type + ' is a ' + vehicle.color + ' ' + vehicle.brand + ' ' + vehicle.model + '.';
+}*/
+
+//after destructuring
+myVehicle(vehicleOne);
+
+function myVehicle({type, color, brand, model}) {
+  const message = 'My ' + type + ' is a ' + color + ' ' + brand + ' ' + model + '.';
+
+  document.getElementById("demo").innerHTML = message;
+}
 </script>
 
 </body>
 </html>
+
