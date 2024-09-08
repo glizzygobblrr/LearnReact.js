@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    
+<script>
+/*const numSet1 = [1,2,3,4,5]
+const numSet2 = [6,7,8,9,10]
+const combNumbers = [...numSet1,...numSet2] //"..." operator used to express everything inside the array
+document.write(combNumbers)
+
+const numbers = [1,2,3,4,5]
+const [one,two,...rest] = numbers
+document.write("<p>" + one + "</p>");
+document.write("<p>" + two + "</p>");
+document.write("<p>" + rest + "</p>");*/
+
+const myVehicle = {
+  brand: 'Ford',
+  model: 'Mustang',
+  color: 'red'
+}
+
+const updateMyVehicle = {
+  type: 'car',
+  year: 2021, 
+  color: 'yellow'
+}
+
+const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}
+
+//Check the result object in the console:
+console.log(myUpdatedVehicle);
+
+
+</script>
+<p>Press F12 and see the result object in the console view.</p>
+
+</body>
+</html>
